@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Lato;
+}
+html {
+  scroll-behavior: smooth;
+}
+iframe {
+  display: none;
+}
+h1 {
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28.8px;
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.container {
+  width: 360px;
+  max-width: 100%;
+  color: #d9d1c7;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 24px 0 24px;
+  background-color: #474c59;
+}
+.top_text {
+  padding: 20px 0 40px 0;
+}
+
+.cover {
+  width: 312px;
+  position: relative;
+  height: 241.86px;
+}
+.cover_img {
+  width: 241.86px;
+  position: absolute;
+  opacity: 90%;
+  z-index: 10;
+}
+
+.disc {
+  width: 225.74px;
+  height: 225.74px;
+  right: 0;
+  top: 8.06px;
+  z-index: 1;
+  position: absolute;
+}
+.disc_logo {
+  width: 80.62px;
+  height: 80.62px;
+  bottom: 76.5px;
+  right: 71.5px;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.detail {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  text-align: left;
+  color: #d9d1c780;
+}
+
+.desc {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  text-align: left;
+  color: #d9d1c780;
+  padding-top: 15px;
+}
+.spotify_button {
+  background-color: #131026;
+  border: solid 2px #131026;
+}
+
+.spotify_button_title {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  text-align: left;
+  padding: 16px 0 16px 0;
+}
+.spotify_logo {
+  padding: 12px;
+}
+
+.spotify_button_content {
+  display: flex;
+  justify-content: center;
+}
+ol {
+  list-style-type: decimal-leading-zero;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19.2px;
+
+  list-style-position: inside;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+ol li {
+    counter-increment: list;
+}
+span {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19.2px;
+  text-align: left;
+  color: #d9d1c780;
+}
+
+li {
+  background-color: rgba(31, 117, 151, 0.527);
+}
+
+li.track_name {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
+/* .flex{
+   
+}
+
+li .track_name {
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #d9d1c7;
+  padding: 6px 12px 6px 12px;
+}
+
+li .track_run {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: right;
+  
+
+}
+ */
