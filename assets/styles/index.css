@@ -39,19 +39,19 @@ h1 {
   width: 312px;
   position: relative;
   height: 241.86px;
+  perspective: 1000px;
 }
 .cover_img {
   width: 241.86px;
   position: absolute;
-  opacity: 90%;
   z-index: 10;
 }
 
-.disc {
+.disc_img {
   width: 225.74px;
   height: 225.74px;
   right: 0;
-  top: 8.06px;
+  top: 12px;
   z-index: 1;
   position: absolute;
 }
@@ -175,9 +175,6 @@ li {
   justify-content: space-between;
 }
 
-.album_box {
-}
-
 .album_img {
   height: 118px;
   margin: 0 8px 0 8px;
@@ -256,9 +253,43 @@ li {
   .spotify_logo {
     display: none;
   }
-  .spotify_logo-large{
+  .spotify_logo-large {
     padding: 12px;
-    display:ruby;
+    display: ruby;
+  }
 
+
+  .cover {
+    perspective: 1000px;
+    overflow: visible;
+  }
+
+  .cover_img {
+    transition: all 200ms;
+  }
+
+  .disc {
+    overflow: visible;
+  }
+
+  .disc_img {
+    transition: transform 200ms ease;
+  }
+
+  .disc_logo {
+    transition: transform 200ms ease;
+  }
+  .cover:hover .disc_logo {
+    transform: translateX(70px) rotate(360deg);
+  }
+
+  .cover:hover .cover_img {
+    transform-origin:left;
+    transform: rotateY(-25deg);
+    opacity: 0.7;
+  }
+
+  .cover:hover .disc_img {
+    transform: translateX(70px) rotate(360deg);
   }
 }
