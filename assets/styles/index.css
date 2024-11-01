@@ -4,6 +4,7 @@
 body {
   margin: 0;
   font-family: Lato;
+  background-color: #474c59;
 }
 html {
   scroll-behavior: smooth;
@@ -28,7 +29,6 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   padding: 0 24px 0 24px;
-  background-color: #474c59;
   padding-bottom: 200px;
 }
 .top_text {
@@ -79,12 +79,15 @@ h1 {
   font-weight: 400;
   line-height: 16.41px;
   text-align: left;
-  color: #D9D1C766;
+  color: #d9d1c766;
   padding-top: 15px;
 }
 .spotify_button {
   background-color: #131026;
   border: solid 2px #131026;
+  width: 312px;
+  margin-top: 15px;
+  border-radius: 4px;
 }
 
 .spotify_button_title {
@@ -99,13 +102,17 @@ h1 {
   padding: 12px;
 }
 
+.spotify_logo-large {
+  display: none;
+}
+
 .spotify_button_content {
   display: flex;
   justify-content: center;
 }
-
-.tracks-list{
-    margin-top: 60px;
+section.track_list,
+section.albums {
+  margin-top: 60px;
 }
 
 ol {
@@ -120,7 +127,7 @@ ol {
 }
 
 .name {
-  padding: 6px 12px 6px 12px;
+  padding: 6px 0 6px 12px;
   margin-right: 10px;
   font-family: Lato;
   font-size: 18px;
@@ -158,4 +165,100 @@ ol {
 
 li {
   margin-bottom: 12px;
+}
+
+.albums {
+  width: 100%;
+  display: flex;
+  margin-top: 24px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.album_box {
+}
+
+.album_img {
+  height: 118px;
+  margin: 0 8px 0 8px;
+  box-shadow: 0 0 10px 0 #00000080;
+}
+
+.box {
+  width: 150px;
+  height: 172px;
+  padding: 16px 8px 38px 8px;
+  background: #0000001a;
+  display: block;
+  margin-top: 12px;
+
+  max-width: fit-content;
+}
+
+.album_name {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.4px;
+  text-align: center;
+  margin: 8px 8px 8px 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 1000px;
+    /* width: 100%; */
+  }
+  .info {
+    display: flex;
+    justify-content: center;
+    height: 745px;
+    align-items: center;
+  }
+  .top_text {
+    text-align: center;
+  }
+
+  .detail_box {
+    width: 500px;
+    margin-left: 113px;
+  }
+  .box {
+    width: 232px;
+    height: 267px;
+    background: #0000001a;
+  }
+  .album_img {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 10px 0 #00000080;
+    object-fit: cover;
+    margin: 0px 10px 0 10px;
+  }
+
+  .album_name {
+    text-align: center;
+  }
+  .spotify_button {
+    background-color: #474c59;
+    border: solid 2px #131026;
+    width: 191px;
+  }
+
+  .spotify_button_title {
+    color: #131026;
+    margin-left: 12px;
+  }
+  .spotify_logo {
+    display: none;
+  }
+  .spotify_logo-large{
+    padding: 12px;
+    display:ruby;
+
+  }
 }
