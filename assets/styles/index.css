@@ -83,28 +83,30 @@ h1 {
   padding-top: 15px;
 }
 .spotify_button {
-  background-color: #131026;
   border: solid 2px #131026;
   width: 312px;
   margin-top: 15px;
   border-radius: 4px;
+
 }
 
 .spotify_button_title {
+  color:#131026;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
   line-height: 16.41px;
   text-align: left;
   padding: 16px 0 16px 0;
+  
 }
-.spotify_logo {
-  padding: 12px;
+.svg {
+  padding-left: 10px;
+  padding-top: 11px;
+  color: #131026;
 }
 
-.spotify_logo-large {
-  display: none;
-}
+
 
 .spotify_button_content {
   display: flex;
@@ -150,7 +152,6 @@ ol {
 .dashed {
   flex-grow: 1;
   height: 2px;
-  background: transparent;
   border-bottom: dashed 1px #d9d1c726;
 }
 .counter {
@@ -204,7 +205,9 @@ li {
 
   white-space: nowrap;
 }
-
+@media (max-width: 1000px) {
+  max-width: 100%;
+}
 @media screen and (min-width: 1000px) {
   .container {
     width: 1000px;
@@ -228,6 +231,11 @@ li {
     width: 232px;
     height: 267px;
     background: #0000001a;
+    transition: background-color 150ms;
+  }
+
+  .box:hover {
+    background-color: #00000057;
   }
   .album_img {
     width: 200px;
@@ -240,22 +248,9 @@ li {
   .album_name {
     text-align: center;
   }
-  .spotify_button {
-    background-color: #474c59;
-    border: solid 2px #131026;
-    width: 191px;
-  }
 
   .spotify_button_title {
-    color: #131026;
     margin-left: 12px;
-  }
-  .spotify_logo {
-    display: none;
-  }
-  .spotify_logo-large {
-    padding: 12px;
-    display: ruby;
   }
 
 
@@ -265,6 +260,8 @@ li {
   }
 
   .cover_img {
+    transform-origin: left;
+
     transition: all 200ms;
   }
 
@@ -273,23 +270,42 @@ li {
   }
 
   .disc_img {
-    transition: transform 200ms ease;
+    transition: transform 200ms ease-in-out;
   }
 
   .disc_logo {
-    transition: transform 200ms ease;
+    transition: transform 200ms ease-in-out;
   }
   .cover:hover .disc_logo {
-    transform: translateX(70px) rotate(360deg);
+    transform: translateX(70px) rotate(56deg);
   }
 
   .cover:hover .cover_img {
-    transform-origin:left;
     transform: rotateY(-25deg);
-    opacity: 0.7;
   }
 
   .cover:hover .disc_img {
-    transform: translateX(70px) rotate(360deg);
+    transform: translateX(70px) rotate(56deg);
   }
+
+  .spotify_button{
+    width: 191px;
+    transition: all 300ms ease-in-out;
+
+  }
+
+  .spotify_button:hover .svg{
+    color: #D9D1C7;
+  }
+
+  .spotify_button:hover{
+    background-color: #131026;
+
+  }
+
+  .spotify_button:hover .spotify_button_title{
+    color: #D9D1C7;
+  }
+
+  
 }
