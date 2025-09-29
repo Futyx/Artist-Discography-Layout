@@ -37,7 +37,7 @@ This project demonstrates strong skills in structuring content and utilizing dyn
 
 ---
 
-**فراموش نکنید که `YOUR_GITHUB_PAGES_LINK_HERE` را با لینک دمو واقعی خود جایگزین کنید و این تغییرات را در گیت‌هاب `commit` کنید.**
+
 
 
 
